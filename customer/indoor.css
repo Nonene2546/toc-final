@@ -29,7 +29,7 @@ body {
 }
 
 .indoor-text-container{
-  /* position: absolute; */
+  z-index: 10;
   align-self: center;
   color: rgb(255, 255, 255);
   font-size: 80px;

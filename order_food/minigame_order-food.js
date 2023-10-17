@@ -65,10 +65,10 @@ function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
         console.log("success")
         if (userClickedPattern.length === gamePattern.length) {
-                nextSequence()
+            nextSequence()
         }
     }
-    else {
+    else if (level !== 5) {
         console.log("wrong")
         $("body").addClass("game-over")
         setTimeout(function () {

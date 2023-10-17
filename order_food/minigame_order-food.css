@@ -20,7 +20,6 @@ html, body{
 .container {
   margin: 0;
   text-align: center;
-  background-color: rgb(174, 204, 174);
 }
 
 #level-title {
@@ -58,7 +57,7 @@ html, body{
 }
 
 .game-over {
-  background-color: red;
+  background-color: rgb(194, 19, 19);
   opacity: 0.8;
 }
 
