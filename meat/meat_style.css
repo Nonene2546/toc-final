@@ -1,0 +1,181 @@
+.meat_kitchen-bg {
+    background: rgb(249, 206, 127);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.meat_pan {
+    background: url('meat_img/pan.png') no-repeat center center;
+    background-size: contain;
+    width: 80%; /* Adjust the width and height as needed */
+    height: 80%;
+    position: absolute;
+    top: 20%; /* Adjust the positioning as needed */
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-190deg);
+}
+
+.meat_grey-rectangle {
+    background: grey; /* Set the background color to grey */
+    width: 500px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    position: absolute; /* Set the position to absolute */
+    top: 50%; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20%;
+    z-index: -1;
+}
+
+.meat_square-button {
+    position: absolute;
+    bottom: 20%; /* Adjust the distance from the bottom as needed */
+    right: 20%; /* Adjust the distance from the right as needed */
+    background: #008CBA; /* Background color of the button */
+    width: 100px; /* Adjust the button width as needed */
+    height: 100px; /* Adjust the button height as needed to make it a square */
+    text-align: center;
+    border-radius: 20%;
+}
+
+.meat_square-button button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+
+.meat_round-button {
+    position: absolute;
+    bottom: 20%; /* Adjust the distance from the bottom as needed */
+    left: 20%; /* Adjust the distance from the right as needed */
+    background: #5b5b5b; /* Background color of the button */
+    width: 100px; /* Adjust the button width as needed */
+    height: 100px; /* Adjust the button height as needed to make it a square */
+    text-align: center;
+    border-radius: 50%;
+}
+
+.meat_round-button button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+.meat_vertical-gauge {
+    position: absolute;
+    bottom: 20%; /* Adjust the bottom distance as needed */
+    left: 5%;
+    width: 4%;
+    height: 40%;
+    background: #eee;
+    border: 1px solid #777;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.meat_gauge-fill {
+    width: 100%;
+    height: 0; /* Start with 0 height (empty) */
+    background: green;
+    
+}
+
+.meat_red-line {
+    width: 50%;
+    height: 10%;
+    background: red;
+    position: absolute;
+    bottom: 20%;
+}
+
+/* Transition */
+
+
+.transition-block{
+    display: flex;
+    background-color: black;
+    border-color: black;
+  }
+  
+  .container{
+    display: none;
+  }
+  
+  .transition-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(0);
+    height: 100vh;
+    z-index: 9999;
+  }
+
+.meat_beef-patty {
+    background: url('meat_img/patty.png') no-repeat center center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    top: 45%;
+    position: absolute;
+    transform: rotate(190deg);
+    
+}
+
+.meat_guide-text {
+  
+  font-size: 24px;
+
+}
+  
+.meat_guide-box {
+  width: 60%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: white;
+  padding: 2px;
+  border: 3px solid #777;
+  border-radius: 20px;
+
+}
+  body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  @keyframes sliding-left-in {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes sliding-left-out {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }

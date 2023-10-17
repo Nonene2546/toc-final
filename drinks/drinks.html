@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy gae nao</title>
+  <link rel="stylesheet" href="drinks.css"> <!--change to your .css-->
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap">
+</head>
+<body>
+  <div class="container" id="container">
+    <!-- write your code here -->
+    <div class="memory-container">
+      <div class="memory-controls-container">
+        <button class="memory-start-btn" role="button"><div>Play Game</div> <div>for select a drink</div></button>
+      </div>
+      <div class="memory-wrapper hide">
+              <div class="memory-stats-container">
+                  <div id="memory-moves-count"></div>
+                </div>
+                <div class="memory-game-container"></div>
+                <div class="memory-result-container">
+                  <div id="memory-result"></div>
+              </div>
+      </div>
+      <div class="memory-select-drinks-container hide">
+        <div id="memory-drinks-title"></div>
+        <div class="memory-drinks"></div>
+        <div class="memory-drinks-btn-container">
+          <button class="memory-drinks-btn" role="button">CONFIRM</button>
+      </div>
+  </div>
+  <script src="transition.js"></script>
+  <script src="drinks.js"></script>
+  <div class="transition-container" id="transition-container"></div>
+</body>
+</html>

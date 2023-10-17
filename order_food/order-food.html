@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order-food.css">
+    <link rel="stylesheet" href="transition.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="choose-food-title">
+            <h2>Choose Your Food</h2>
+        </div>
+        <form>
+            <div class="food-type">
+                <div class="image" id="burger">
+                    <img src="./images/order_food_burger.jpg" alt="">
+                </div>
+                <div class="image" id="rice">
+                    <img src="./images/order_food_rice.jpg" alt="">
+                </div>
+                <div class="image" id="sushi">
+                    <img src="./images/order_food_sushi.jpg" alt="">
+                </div>
+                <div class="image" id="pizza">
+                    <img src="./images/order_food_pizza.jpg" alt="">
+                </div>
+            </div>
+            <br>
+        <div class="selected">
+            You select : <span id="selected"></span>
+        </div>
+        <button type="button" id="btn-selected">Order</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="order-food.js" charset="utf-8"></script>
+    <script src="transition.js" charset="utf-8"></script>
+    <div class="transition-container" id="transition-container"></div>
+</body>
+
+</html>

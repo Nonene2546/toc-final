@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy gae nao</title>
+  <link rel="stylesheet" href="rock-paper-scissors.css"> <!--change to your .css-->
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div>
+      <img src="assest/rock+paper+scissors+FINALS_Full+logo+-+landscape.png" alt="" style="top:-50px" width="150px"
+        height="70px">
+      <div id="rps_description" style="height: 70px;">
+        <div>You have to win streak 3 time</div>
+      </div>
+      <img id="rps_win_lose_alert" class="rps_win_lose_alert" width="200px" height="150px">
+      <div>
+        <div class="rock_paper_scissor_field" style="margin-top:  0px;">
+          <img id="bot_rock" class="rps_movable-img" src="assest/back_card.png" data="-1" alt="">
+          <img id="bot_paper" class="rps_movable-img" src="assest/back_card.png" data="-1" alt="">
+          <img id="bot_scissors" class="rps_movable-img" src="assest/back_card.png" data="-1" alt="">
+        </div>
+        <div class="rock_paper_scissor_field">
+          <img class="rps_movable-img" src="assest/rock.png" alt="" data="0">
+          <img class="rps_movable-img" src="assest/paper.png" alt="" data="1">
+          <img class="rps_movable-img" src="assest/scissors.png" alt="" data="2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="transition.js"></script>
+  <script src="rock-paper-scissors.js"></script>
+  <div class="transition-container" id="transition-container"></div>
+</body>
+
+</html>

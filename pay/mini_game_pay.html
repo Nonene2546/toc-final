@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="StatePayment" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="mini_game_pay.css">
+    <link rel="stylesheet" href="transition.css">
+</head>
+<body>
+
+    <div class="container" id="container">
+
+        <div class="minipay_maincontainer">
+            <div class="minipay_main">
+    
+                <h1>Payment<span> Now!!</span></h1>
+                <div class="minipay">
+                    <div class="minipay_showans"><span id="minipay_ans"></span></div>
+            
+                    <div class="minipay_box1">
+                        <div class="minipay_boxcol">
+                            <div type="textf" id="minipay_intext" class="minipay_intext11"></div>
+                        </div>
+                        <div class="minipay_add">
+                            <p>+</p>
+                        </div>
+                        <div class="minipay_boxcol">
+                            <div type="textf" id="minipay_intext1" class="minipay_intext11"></div>
+                        </div>
+                        <div class="minipay_add">
+                            <p>+</p>
+                        </div>
+                        <div class="minipay_boxcol">
+                            <div type="textf" id="minipay_intext3" class="minipay_intext11"></div>
+                        </div>
+                      
+                        <div class="minipay_add">
+                            <p>+</p>
+                        </div>
+                        <div class="minipay_boxcol">
+                            <div type="textf" id="minipay_intext4" class="minipay_intext11"></div>
+                        </div>
+                        <div class="minipay_add">
+                            <p>+</p>
+                        </div>
+                        <div class="minipay_boxcol">
+                            <div type="textf" id="minipay_intext5" class="minipay_intext11"></div>
+                        </div>
+                    </div>
+            
+                    <div class="minipay_box2">
+                        <input type="text"  id="minipay_intext2">
+                    </div>
+                    
+                    <div class="minipay_box2">
+                        <button class="minipay_btn" onclick="Game()"> Pay</button>
+                    </div>        
+                </div>
+            
+            </div>
+        </div>
+        
+      </div>
+      <div class="transition-container" id="transition-container"></div>
+    
+    <script src = "mini_game_pay.js"> </script>
+    <script src="transition.js"></script>
+</body>
+</html>

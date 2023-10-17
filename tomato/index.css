@@ -1,0 +1,50 @@
+body {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+#image-container {
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  z-index: -1;
+}
+canvas {
+  border: none; /* Remove the canvas border */
+  background: transparent; /* Make the canvas background transparent */
+}
+.completed-image {
+  position: absolute;
+  top: 0;
+  max-height: 100%;
+}
+.completed-image.left {
+  left: 0;
+}
+.completed-image.right {
+  right: 0;
+}
+
+#textBtn {
+  z-index: 1;
+}

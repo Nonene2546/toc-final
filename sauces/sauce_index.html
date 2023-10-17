@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce-state</title>
+    <link rel="stylesheet" href="sauce_style.css">
+    <link rel="stylesheet" href="transition.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container"></div>
+    <div class="transition-container" id="transition-container"></div>
+    <div id="title">
+        <h1 id="textTitle">Please stack your sauces</h1>
+    </div>
+    <div id="preview">
+        <div id="sauce-bowl"></div>
+        <div id="sauce-tomato"></div>
+        <div id="sauce-cheese"></div>
+        <div id="sauce-chili"></div>
+        <div id="sauce-pepper"></div>
+    </div>
+    <div id="startDiv">
+        <button id="stButton">Start</button>
+    </div>
+    <div id="gameWindow">
+        <div class="pipes">
+            <div id="pipe-1"></div>
+            <div id="pipe-2"></div>
+            <div id="pipe-3"></div>
+            <div id="pipe-4"></div>
+        </div>
+        <div id="sauces">
+            <div class="bowl" id="bowl"></div>
+        </div>
+    </div>
+    <script src="sauce_index.js"></script>
+    <script src="transition.js"></script>
+</body>
+</html>

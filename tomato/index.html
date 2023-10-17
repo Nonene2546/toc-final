@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy gae nao</title>
+  <link rel="stylesheet" href="index.css"> <!--change to your .css-->
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap">
+</head>
+<body>
+  <div class="transition-container" id="transition-container"></div>
+  <div class="container" id="container">
+    <canvas id="canvas" width="500" height="400"></canvas>
+    <div id="image-container">
+      <img src="tomato_round.jpg" alt="Tomato" id="tomato-image" style="max-width: 100%; max-height: 100%;">
+      <div id="status" style="text-align: center; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); font-size: 2em; background-color: aqua;">Slice a tomato</div>
+      <div class="wrapper hide">
+        <button id="textBtn">Next</button>
+      </div> 
+    </div>
+  </div>
+  <script src="transition.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+change all index.* to your file

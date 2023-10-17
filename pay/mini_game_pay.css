@@ -1,0 +1,128 @@
+/* *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+} */
+
+.minipay_intext11{
+  line-height: 50px;
+}
+
+.minipay_boxcol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.minipay_maincontainer{
+    width: 100%;
+    height: 100vh;
+    background: #600b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minipay{
+    width: 850px;
+    height:700px;
+    background: #524a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.minipay_showans{
+    width: 100%;
+    height: 55px;
+    background: #ff0202a2;
+    margin: 0px 0px 60px 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.minipay_box1{
+    display: flex;
+}
+
+.minipay_intext11,#minipay_intext2{
+    width: 76px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 55px;
+    padding: 0px 10px;
+    text-align: center;
+    border: none;
+    background: #fff;
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 2px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999;
+}
+
+.minipay_add{
+    margin: 13px 20px 12px 21px;
+    font-size: 25px;
+}
+
+#minipay_intext2{
+    width: 180px;
+    height: 60px;
+    margin: 30px 0px;
+    padding: 0px 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.minipay_btn{
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    clear: #fff;
+    background: #fb6868;
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 2px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.minipay_main h1{
+    margin: 30px 0px;
+}
+
+.minipay_main h1 span{
+    color: #fb6868;
+}

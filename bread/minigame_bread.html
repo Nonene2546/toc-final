@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Maze Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .minigame_bread-butter-container {
+            text-align: center; /* Center the content horizontally */
+        }
+        .minigame_bread-butter-container button {
+            padding: 10px 20px; /* Adjust padding to change button size */
+            font-size: 16px; /* Adjust font size */
+            background-color: darkblue; /* Change the button's background color */
+            color: white; /* Change the button's text color */
+            border: none; /* Remove the button border if desired */
+            cursor: pointer;
+        }
+        .minigame_bread-butter-container button:first-child {
+            margin-right: 20px; /* Add margin between the first button and the second button */
+        }
+        body {
+            background-image: url('state_bread_background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .container{
+          display: none;
+          flex-direction: column;
+        }
+    </style>
+    <link rel="stylesheet" href="transition.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <canvas id="mazeCanvas"></canvas>
+    <img id="playerImg" src="player.png" style="display: none;">
+    <img id="exitImg" src="exit.png" style="display: none;">
+    </div>
+    <div class="transition-container" id="transition-container"></div>
+    <script src="transition.js"></script>
+    <script src="maze.js"></script>
+</body>
+</html>
