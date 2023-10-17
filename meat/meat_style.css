@@ -38,6 +38,11 @@
     height: 100px; /* Adjust the button height as needed to make it a square */
     text-align: center;
     border-radius: 20%;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.meat_square-button:active {
+  background: #00ba16;
 }
 
 .meat_square-button button {
@@ -49,7 +54,6 @@
     font-size: 24px;
 }
 
-
 .meat_round-button {
     position: absolute;
     bottom: 20%; /* Adjust the distance from the bottom as needed */
@@ -59,6 +63,10 @@
     height: 100px; /* Adjust the button height as needed to make it a square */
     text-align: center;
     border-radius: 50%;
+}
+
+.meat_round-button:active{
+  background: rgb(222, 12, 12);
 }
 
 .meat_round-button button {

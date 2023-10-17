@@ -1,7 +1,3 @@
-document.addEventListener('DOMContentLoaded', function(){
-    // document.body.style.backgroundImage = 'url(\'images/bg101.png\')'
-  })
-  
   function redirectToResultPage() {
     document.getElementById('transition-container').style.animation = 'sliding-left-in 1s forwards'
     setTimeout(function(){
@@ -266,7 +262,6 @@ document.addEventListener('DOMContentLoaded', function(){
             titleText.innerHTML = "You should more practice!";
             startButton.innerHTML = "Try again";
   
-            speed += .5;
             saucesArray = [bowl];
             restock();
             let sauceLength = sauces.childElementCount;

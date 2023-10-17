@@ -243,6 +243,7 @@ transform: scale(1.1);
   justify-content: center;
   line-height: 1;
   list-style: none;
+  margin: 50px auto;
   overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;

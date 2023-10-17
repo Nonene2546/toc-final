@@ -1,9 +1,26 @@
-/* *{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: roboto;
-} */
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    height: 100%;
+}
 
 .minipay_intext11{
   line-height: 50px;
@@ -15,43 +32,27 @@
   align-items: center;
 }
 
-body {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  overflow: hidden;
-  background-color: black;
-}
-
-html, body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-
 .minipay_maincontainer{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: #600b0b;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .minipay{
     width: 850px;
-    height:700px;
+    height: auto;
     background: #524a4a;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+}
+
+.minipay .minipay_box1,.minipay_box2 {
+    margin: 10px auto;
 }
 
 .minipay_showans{
@@ -120,6 +121,11 @@ html, body{
     border-bottom-right-radius: 10px;
 }
 
+.minipay_btn:hover{
+    background-color: #ff0202a2;
+    cursor: pointer;
+}
+
 .minipay_main h1{
     margin: 30px 10px;
     background-color: #ff0202a2;
@@ -130,4 +136,5 @@ html, body{
 
 .minipay_main h1 span{
     color: #fb6868;
+    text-shadow: 0 0 3px #600b0b;
 }

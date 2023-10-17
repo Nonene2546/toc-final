@@ -148,7 +148,7 @@ const matrixGenerator = (cardValues) => {
                             nextState()
                           }
                         });
-                    }, 100);
+                    }, 1000);
                 }
               } else {
                 let [tempFirst, tempSecond] = [firstCard, secondCard];

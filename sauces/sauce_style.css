@@ -79,6 +79,11 @@
     height: 50px;
 }
 
+#stButton:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
 #bowl {
     position: relative;
     height: 10px;
