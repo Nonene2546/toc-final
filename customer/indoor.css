@@ -29,7 +29,7 @@ body {
 }
 
 .indoor-text-container{
-  z-index: 10;
+  z-index: 4;
   align-self: center;
   color: rgb(255, 255, 255);
   font-size: 80px;
@@ -38,14 +38,19 @@ body {
   border-radius: 20px;
 }
 
+.indoor-circle-container{
+  z-index: 5;
+}
+
 .circle {
+  z-index: 5;
   position: absolute;
   width: 50px;
   height: 50px;
-  border: 5px solid white; /* Add a white border to create a ring effect */
+  border: 5px solid white;
   border-radius: 50%;
   cursor: pointer;
-  animation: pulse 1s infinite; /* Add a glowing effect */
+  animation: pulse 1s infinite;
 
   @keyframes pulse {
     0% {

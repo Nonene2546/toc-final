@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-  document.body.style.backgroundColor = 'white' // change this to your background
+  document.body.style.backgroundColor = 'white'
 })
 
 const canvas = document.getElementById('canvas');
@@ -119,7 +119,9 @@ function checkCompletion() {
       canvas.style.pointerEvents = 'none';
       showCompletedImages();
       if (hasCompleted == true) {
-        textButton.addEventListener("click", redirectToResultPage());
+        setTimeout(() => {
+          redirectToResultPage()
+        }, 1000);
       }
      
   } else if (!isWithinTolerance()) {
