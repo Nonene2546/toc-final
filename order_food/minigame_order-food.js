@@ -9,10 +9,12 @@ function redirectToResultPage() {
         window.location.href = '../bread/choose_bread.html';
     }, 1000)
 }
-
+let f = 1
 function nextSequence() {
-    if (level !== 5){
-        setTimeout(() => {
+    if (level < 5 && f){
+        f = 0
+        setTimeout(() => { //while this not end disable "User clicks button"
+            f = 1
             userClickedPattern = []
             level++;
             $("#level-title").text("level " + level)
@@ -21,18 +23,21 @@ function nextSequence() {
             gamePattern.push(randomChosenColour);
             $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
             }, 1000);
-    } else {
-        win()
+    } else if(f){ //win
+        $("#level-title").text("You win")
+        setTimeout(() => {
+            redirectToResultPage()
+        }, 1000);
     }
 }
 
 
-// User clicks
+// User clicks button
 $(".btn").click(function () {
-    var userChosenColour = $(this).attr("id")
-    userClickedPattern.push(userChosenColour)
-    animatePress(userChosenColour)
-    checkAnswer(userClickedPattern.length - 1)
+        var userChosenColour = $(this).attr("id")
+        userClickedPattern.push(userChosenColour)
+        animatePress(userChosenColour)
+        checkAnswer(userClickedPattern.length - 1)
 })
 
 // Button animations
@@ -84,11 +89,4 @@ function startOver() {
     level = 0
     gamePattern = []
     started = false
-}
-
-function win() {
-    $("#level-title").text("You win")
-    setTimeout(() => {
-        redirectToResultPage()
-    }, 1000);
 }
