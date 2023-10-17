@@ -158,6 +158,7 @@
     -ms-user-select: none;
     overflow: hidden;
     background-color: black;
+    background-size: 100% 100%;
   }
   
   html, body{

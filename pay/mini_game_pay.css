@@ -107,7 +107,8 @@ html, body{
 .minipay_btn{
     padding: 8px 20px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     clear: #fff;
     background: #fb6868;
     box-shadow: 1px 1px 0px #999,
@@ -120,7 +121,11 @@ html, body{
 }
 
 .minipay_main h1{
-    margin: 30px 0px;
+    margin: 30px 10px;
+    background-color: #ff0202a2;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .minipay_main h1 span{

@@ -40,6 +40,7 @@ html, body{
   align-items: center;
   justify-content: center;
   display: flex;
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 @keyframes sliding-left-in {

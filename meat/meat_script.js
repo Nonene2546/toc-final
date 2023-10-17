@@ -1,17 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Add an event listener to the button
-//     document.getElementById('flip-button').addEventListener('click', function () {
-        
-//         if (progress===80) {
-//             resetProgress();
-//         } else {
-//             toggleGauge();
-//         }
-        
-//     });
-// });
-
-
 document.addEventListener('DOMContentLoaded', function () {
     var progress = 0;
     const progressBar = document.getElementById('meat_progress');
@@ -85,44 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 });
-
-
-
-
-// ===============================================================================================================
-document.addEventListener('DOMContentLoaded', function(){
-    create_transition_block()
-    document.getElementById('container').style.display = 'flex'
-    document.getElementById('transition-container').style.animation = 'sliding-left-out 1s forwards'
-  
-    function create_transition_block(){
-      const container = document.getElementById('transition-container')
-      let height = 30
-      let curWidth = window.innerWidth * 1.2
-      let sumHeight = 0
-    
-      while(sumHeight < window.innerHeight){
-        const randomHeight = height
-        const randomWidth = curWidth
-        curWidth += 50
-    
-        // Create the animated block
-        const animatedBlock = document.createElement('div')
-        animatedBlock.id = 'animatedBlock'
-        animatedBlock.classList.add('transition-block')
-        animatedBlock.style.height = randomHeight + 'px'
-        animatedBlock.style.width = randomWidth + 'px'
-    
-        // Add the block to the container
-        container.appendChild(animatedBlock);
-        sumHeight += randomHeight
-      }
-    }
-  })
-
-document.addEventListener('DOMContentLoaded', function(){
-    document.body.style.backgroundImage = 'url(\'state_bread_background.png\')'
-  })
 
 function redirectToResultPage() {
     document.getElementById('transition-container').style.animation = 'sliding-left-in 1s forwards'

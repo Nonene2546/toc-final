@@ -134,6 +134,16 @@ display: grid;
 gap: 0.6em;
 }
 
+.memory-drinks{
+  width: 100%;
+}
+
+.memory-drinks img{
+  width: auto;
+  height: 100%;
+  border-radius: 5px;
+}
+
 .card-container {
 position: relative;
 width: 6.25em;

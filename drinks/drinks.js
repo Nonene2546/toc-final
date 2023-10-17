@@ -135,6 +135,7 @@ const matrixGenerator = (cardValues) => {
                               if (!clicked) {
                                 drinksValues = drink.getAttribute("data-drinks-value");
                                 // alert("You selected " + drinksValues + " drinks");
+                                drinksTitle.innerHTML = drinksValues
                                 clicked = true;
                               }
                             });
@@ -147,7 +148,7 @@ const matrixGenerator = (cardValues) => {
                             nextState()
                           }
                         });
-                    }, 2000);
+                    }, 100);
                 }
               } else {
                 let [tempFirst, tempSecond] = [firstCard, secondCard];

@@ -2,16 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
   document.body.style.backgroundColor = 'white' // change this to your background
 })
 
-function nextState(){
-  setTimeout(function(){
-    window.location.href = '' // change this to next state url
-  }, 1000)
-  document.getElementById('transition-container').style.animation = 'sliding-left-in 1s linear'
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-  document.body.style.backgroundImage = 'url(\'state_bread_background.png\')'
-  })
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const dashLength = 10;

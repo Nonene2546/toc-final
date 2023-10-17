@@ -18,6 +18,10 @@ body {
   display: flex;
   font-family: 'Tilt Neon', sans-serif;
 }
+#rps_description{
+  font-size: 25px;
+}
+
 .rps_movable-img {
   margin: 10px;
   position: relative;

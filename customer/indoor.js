@@ -12,8 +12,13 @@ function nextState(){
 let clickCount = 0;
 
 function getRandomPosition(container) {
-  const randomX = Math.random() * (1490) + 10;
-  const randomY = Math.random() * (590) + 10;
+  const maxX = screen.width * 0.8
+  const minX = screen.width * 0.1
+  const maxY = screen.height * 0.8
+  const minY = screen.height * 0.1
+
+  const randomX = Math.random() * (maxX - minX) + minX;
+  const randomY = Math.random() * (maxY - minY) + minY;
 
   return { x: randomX, y: randomY };
 }
@@ -30,9 +35,9 @@ function createRandomCircle(container) {
     circle.style.display = 'none';
     clickCount++;
 
-    if (clickCount <= 10) {
+    if (clickCount <= 5) {
       updateText(clickCount);
-      if (clickCount === 10) {
+      if (clickCount === 5) {
         updateTextToWelcome();
         changeImageToCustomer()
         setTimeout(() => {
@@ -41,7 +46,7 @@ function createRandomCircle(container) {
       }
     }
 
-    if (clickCount < 10) {
+    if (clickCount < 5) {
       createRandomCircle(container);
     }
   });
@@ -51,7 +56,7 @@ function createRandomCircle(container) {
 
 function updateText(count) {
   const textContainer = document.getElementById('indoor-text-container');
-  textContainer.textContent = `Click circle ${10 - count} time${count === 9 ? '' : 's'}`;
+  textContainer.textContent = `Click circle ${5 - count} time${count === 4 ? '' : 's'}`;
 }
 
 function updateTextToWelcome() {

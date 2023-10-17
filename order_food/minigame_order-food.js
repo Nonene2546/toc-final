@@ -11,20 +11,21 @@ function redirectToResultPage() {
 }
 
 function nextSequence() {
-    if (level === 5) {
+    if (level !== 5){
+        setTimeout(() => {
+            userClickedPattern = []
+            level++;
+            $("#level-title").text("level " + level)
+            var randomNumber = Math.floor(Math.random() * 4);
+            var randomChosenColour = buttonColours[randomNumber];
+            gamePattern.push(randomChosenColour);
+            $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+            }, 1000);
+    } else {
         win()
     }
-    else {
-        userClickedPattern = []
-        level++;
-        $("#level-title").text("level " + level)
-        var randomNumber = Math.floor(Math.random() * 4);
-        var randomChosenColour = buttonColours[randomNumber];
-        gamePattern.push(randomChosenColour);
-        $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
-    }
-    
 }
+
 
 // User clicks
 $(".btn").click(function () {
@@ -39,11 +40,19 @@ function animatePress(currentColour) {
     $("#" + currentColour).addClass("pressed");
     setTimeout(function () {
         $("#" + currentColour).removeClass("pressed")
-    }, 100)
+    }, 200)
 }
 
 // Start the game
 $(document).keypress(function () {
+    if (!started) {
+        $("#level-title").text("Level " + level)
+        nextSequence()
+        started = true
+    }
+})
+
+$(document).click(function () {
     if (!started) {
         $("#level-title").text("Level " + level)
         nextSequence()
@@ -56,9 +65,7 @@ function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
         console.log("success")
         if (userClickedPattern.length === gamePattern.length) {
-            setTimeout(function () {
                 nextSequence()
-            }, 1000)
         }
     }
     else {
@@ -80,6 +87,8 @@ function startOver() {
 }
 
 function win() {
-    redirectToResultPage()
     $("#level-title").text("You win")
+    setTimeout(() => {
+        redirectToResultPage()
+    }, 1000);
 }

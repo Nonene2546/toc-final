@@ -15,8 +15,8 @@ function showSubmitButton() {
     document.getElementById('submitButton').style.display = 'block';
 }
 function redirectToResultPage() {
-    window.location.href = 'minigame_bread.html';
+    document.getElementById('transition-container').style.animation = 'sliding-left-in 1s forwards'
     setTimeout(function(){
-      document.getElementById('transition-container').style.animation = 'sliding-left-in 1s forwards'
+        window.location.href = 'minigame_bread.html';
     }, 1000)
 }

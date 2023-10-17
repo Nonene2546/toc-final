@@ -112,10 +112,10 @@ function movePlayer(event) {
 }
 
 function redirectToResultPage() {
-  window.location.href = '../meat/index.html';
-  setTimeout(function(){
     document.getElementById('transition-container').style.animation = 'sliding-left-in 1s forwards'
-  }, 1000)
+    setTimeout(function(){
+        window.location.href = '../meat/index.html';
+    }, 1000)
 }
 
 function startGame() {
@@ -123,17 +123,5 @@ function startGame() {
     drawMaze();
     drawPlayer();
 }
-
-// function resetGame() {
-//     document.removeEventListener("keydown", movePlayer);
-//     currentMaze = selectRandomMaze();
-
-//     player.x = 1;
-//     player.y = 1;
-//     exit.x = currentMaze[0].length - 2;
-//     exit.y = currentMaze.length - 2;
-//     drawMaze();
-//     drawPlayer();
-// }
 
 startGame();

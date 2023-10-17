@@ -2,41 +2,8 @@
 <html>
 <head>
     <title>Choose Bread</title>
-    <style>
-        .choose_bread-button-container {
-            text-align: center;
-        }
-
-        .container{
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .choose_bread-choice-button {
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            cursor: pointer;
-            background-color: #0074d9;
-            color: white;
-            text-align: center;
-        }
-        .choose_bread-choice-button img {
-            width: 400px; /* Adjust the width as needed */
-            height: 400px; /* Adjust the height as needed */
-        }
-        body {
-            background-image: url('state_bread_background.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
-        .choose_bread-centered-text{
-            text-align: center;
-        }
-       
-    </style>
-    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="choose_bread.css">
+    <link rel="stylesheet" href="../Transitions/transition.css">
 </head>
 <body>
   <div class="container" id="container">
@@ -57,7 +24,7 @@
     <button id="submitButton" style="display: none; width: 200px; height: 50px;" onclick="redirectToResultPage()">Submit</button>
   </div>
     <div class="transition-container" id="transition-container"></div>
-    <script src="transition.js"></script>
+    <script src="../Transitions/transition.js"></script>
     <script src="state_bread.js"></script>
 </body>
 </html>
