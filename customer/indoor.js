@@ -9,6 +9,9 @@ function nextState(){
   document.getElementById('transition-container').style.animation = 'sliding-left-in 1s linear'
 }
 
+const customerImage = new Image();
+customerImage.src = 'customer.png';
+
 let clickCount = 0;
 
 function getRandomPosition(container) {
@@ -39,7 +42,7 @@ function createRandomCircle(container) {
       updateText(clickCount);
       if (clickCount === 5) {
         updateTextToWelcome();
-        changeImageToCustomer()
+        document.body.style.backgroundImage = 'url(\'customer.png\')'
         setTimeout(() => {
           nextState()
         }, 1000);
@@ -64,13 +67,7 @@ function updateTextToWelcome() {
   textContainer.textContent = 'Welcome customer';
 }
 
-function changeImageToCustomer() {
-  const doorImage = document.getElementById('door-img');
-  doorImage.src = 'customer.png';
-}
-
 const indoorContainer = document.getElementById('indoor-container');
 const circleContainer = document.getElementById('indoor-circle-container');
 
-// Create the initial circle
 createRandomCircle(circleContainer);
