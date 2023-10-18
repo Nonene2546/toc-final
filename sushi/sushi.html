@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Bread</title>
+    <link rel="stylesheet" href="choose_bread.css">
+    <link rel="stylesheet" href="../Transitions/transition.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="choose_bread-centered-text">
+        <h1>Which type of sushi do you want?</h1>
+    </div>
+    <div class="choose_bread-button-container">
+        <button class="choose_bread-choice-button" id="wholeWheatButton">
+            <h2>Temaki Sushi</h2>
+            <img src="wholewheatbread.png" alt="Whole Wheat Bread">
+        </button>
+        <button class="choose_bread-choice-button" id="whiteBreadButton">
+            <h2>Sushi</h2>
+            <img src="whitebread.png" alt="White Bread">
+        </button>
+    </div>
+    
+    <button id="submitButton" style="display: none; width: 200px; height: 50px;" onclick="redirectToResultPage()">Submit</button>
+  </div>
+    <div class="transition-container" id="transition-container"></div>
+    <script src="../Transitions/transition.js"></script>
+    <script src="state_bread.js"></script>
+</body>
+</html>
