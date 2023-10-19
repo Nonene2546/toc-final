@@ -1,12 +1,16 @@
 document.getElementById('wholeWheatButton').addEventListener('click', function() {
     // Handle the selection of whole wheat bread
     // alert('You chose Whole Wheat Bread');
+    document.getElementById('wholeWheatButton').style = "background:green"
+    document.getElementById('whiteBreadButton').style = "background:#0074d9"
     showSubmitButton();
 });
 
 document.getElementById('whiteBreadButton').addEventListener('click', function() {
     // Handle the selection of white bread
     // alert('You chose White Bread');
+    document.getElementById('wholeWheatButton').style = "background:#0074d9"
+    document.getElementById('whiteBreadButton').style = "background:green"
     showSubmitButton();
 });
 
