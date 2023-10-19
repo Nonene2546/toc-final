@@ -28,7 +28,7 @@ function rps_moveImageUp(img) {
     } else if ((player == 0 && bot == 1) || (player == 1 && bot == 2) || (player == 2 && bot == 0)) {
         win_cont = 0;
         document.getElementById('rps_win_lose_alert').src = "assest/lose.png";
-        document.getElementById('rps_description').innerHTML = "<div>You have to win streak 3 time</div>"
+        document.getElementById('rps_description').innerHTML = "<div>You have to win streak 2 time</div>"
       return "bot";
     } else {
         win_cont++;
@@ -45,22 +45,24 @@ function rps_moveImageUp(img) {
         player = image.getAttribute("data")
           if (rps_animation == 0 && player != "-1")  {
             num = rps_random_bot(image);
-            rps_check_winner(player, num);
             rps_animation = 1;
             document.getElementById(dict[num]).classList.add("movedown");
             document.getElementById(dict[num]).src = image_dict[num];
             image.classList.add("clicked");
-            setTimeout(() => {
-              image.classList.remove("clicked");
-              document.getElementById(dict[num]).src = "assest/back_card.png";
-              document.getElementById(dict[num]).classList.remove("movedown");
-              rps_animation = 0;
-              document.getElementById('rps_win_lose_alert').style.display = "none";
-              if (win_cont == 2)
-              {
-                nextState();
-              }
-          }, 2000);
+              setTimeout(() => {
+                rps_check_winner(player, num);
+                setTimeout(()=>{
+                  image.classList.remove("clicked");
+                  document.getElementById(dict[num]).src = "assest/back_card.png";
+                  document.getElementById(dict[num]).classList.remove("movedown");
+                  rps_animation = 0;
+                document.getElementById('rps_win_lose_alert').style.display = "none";
+                if (win_cont == 2)
+                {
+                  setTimeout(nextState(),500)
+                }},1000)  
+
+              }, 500);
         }
       });
   });
